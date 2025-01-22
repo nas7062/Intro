@@ -1,57 +1,167 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-    color:white;
-    background-color: rgba(228,128,178,0.8);
-    border-bottom: 1px solid #ddd;
-}
-header h2 {
-    position: relative;
-    right: -800px;
-}
-a {
-    color: black;
-    text-decoration: none;
-}
-.slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-}
-nav {
-    display: flex;
-    justify-content: space-around;
-    width:500px;
-    margin: 0 auto;
-}
-.slide {
-    flex: none;
-    width: 100vw;
+#container {
+    max-width:500px;
+    min-width:400px;
+    margin :0 auto;
+    background-color: aquamarine;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-    box-sizing: border-box;
-    padding: 20px;
-    border-right: 1px solid #ddd;
+    border-radius: 30px;
 }
-
-
-
-h2 {
-    margin-bottom: 20px;
+#container h1 {
+    margin-top: 0;
 }
-
-img {
-    width: 300px;
+body {
+    margin:0;
+    padding: 0;
+}
+#index-header {
+    color:white;
+    text-align: center;
+    position: relative;
+    top:150px;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 25px aqua;
     height: 200px;
-    display: block;
+}
+#index-main {
+    text-align: center;
+    margin-top: 200px;
+}
+#index-main > button {
+    background-color: rgba(108, 238, 16, 0.389);
+    border: 3px solid rgb(9, 220, 69);
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 20px;
+    width: 250px;
     margin: 0 auto;
+    color:white;
+    font-size: 1.4rem;
+    box-shadow: 0px 5px 0px 0px #007144;
+}
+#index-main button:hover {
+    margin-top: 10px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 0px 0px #007144;
+}
+#back {
+    border:0;
+    background-color: rgba(108, 238, 16, 0.389);
+    border-radius: 50%;
+    font-size: 2.0rem;
+    margin:5px;
+    padding: 5px 15px;
+    color:white;
+    box-shadow: 0px 5px 0px 0px #007144;
+    cursor: pointer;
+    
+    
+}
+#back:hover {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 0px 0px #007144;
+}
+#menu-header > h1 ,h2 {
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px 15px rgba(0, 13, 255, 0.674);
+}
+#menu-main {
+    text-align: center;
+    margin-top: 100px;
+}
+#section-container {
+    width: 95%;
+    height: 400px;
+    margin: 0px 10px;
+    background-color:#0ba86973;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 0;
+}
+#section-container > section {
+    width:45%;
+    height:45%;
+    background-color: rgba(200, 255, 246, 0.875);
+    margin: 10px 10px;
+    display: flex;
+        justify-content:center;
+        align-items:center;
+    border-radius: 15px;
+    cursor:pointer;
+    box-shadow: 0px 5px 0px 0px #007144;
+}
+#section-container > section:hover {
+    background-color: chartreuse;
+}
+figcaption {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-top: 5px;
+}
+#intro-header {
+    height: 420px;
+}
+#intro-header  img {
+    display: inline;
+    width:400px;
+    border-radius: 50%;
+}
+#menu-header  h2 {
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px 15px rgba(0, 13, 255, 0.674);
+}
+#intro-img {
+    position: relative;
+    top:-50px;
+}
+#intro-main >section {
+    margin-left: 30px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+#hobby-header {
+    height: 420px;
+}
+#hobby-header  img {
+    display: inline;
+    width:400px;
+    height: 350px;
+    border-radius: 30%;
+}
+#hobby-main > section{
+    margin-left: 30px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 50px;
+}
+#music-header {
+    height: 150px;
+}
+#music-main > section{
+    margin-left: 30px;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+#share-img img {
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+#share-header {
+    height: 350px;
+}
+#share-header h2 {
+    display: block;
+    text-align: center;
+}
+#share-main >section {
+    margin-left: 60px;
+    font-size: 1.2rem;
+    font-weight: 800;
 }
