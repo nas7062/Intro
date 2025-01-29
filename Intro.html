@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head profile="">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>김민석_프론트엔드/비대면 인적사항</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div id="container">
-      <header id="intro-header">
-        <button id="back" onclick="location.href='./menu.html'">&lt;</button>
-        <figure id="intro-img">
-          <img src="./bed.jpg" alt="image" />
-        </figure>
-      </header>
-      <main id="intro-main">
-        <section>
-            <p>이름 : 김민석</p>
-            <p>MBTI : INFP (찐따)</p>
-            <p>제일 좋았던 경험은? : 밤바다 보면서 버스킹 들을 때</p>
-            <p>좋아하는 음식 : 떡볶이(엽기 떡볶이)</p>
-            <p>앞으로의 계획 : 부족한 만큼 열심히 하기!<br>같이 열심히 하실분 구합니다!</p>
-        </section>
-      </main>
-    </div>
-  </body>
+
+<head profile="">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김민석_프론트엔드/비대면 인적사항</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <header id="intro-header">
+      <button id="back" onclick="location.href='./menu.html'">&lt;</button>
+      <figure id="intro-img">
+        <img src="./bed.jpg" alt="image" />
+      </figure>
+    </header>
+    <main id="intro-main">
+      <section>
+        <p>이름 : 김민석</p>
+        <p>MBTI : INFP (찐따)</p>
+        <p>제일 좋았던 경험은? : 밤바다 보면서 버스킹 들을 때<span class="modal_btn" data-modal="experience">&gt;</span></p>
+        <p>좋아하는 음식 : 떡볶이(엽기 떡볶이)<span class="modal_btn" data-modal="food">&gt;</span></p>
+        <p>앞으로의 계획 : 부족한 만큼 열심히 하기!<br>같이 열심히 하실분 구합니다!</p>
+      </section>
+      <div class="modal">
+        <div class="modal_popup  experience">
+          <img src="./2.jpg" alt="좋았던 경험 사진">
+          <p>호텔 야외 수영장에서 밤에 온수풀에 <br>수영했던 기억이  너무  행복했습니다!</p>
+          <p class="close_btn">닫기</p>
+        </div>
+        <div class="modal_popup food">
+          <img src="./food.jpg" alt="좋았던 음식 사진">
+          <p>제가 제일 좋아하는 떡볶이 엽기 떡볶이 사진입니다! </p>
+          <p class="close_btn">닫기</p>
+        </div>
+      </div>
+      <img src="./cursor4.png" id="customCursor" class="custom-cursor" />
+    </main>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
 </html>
