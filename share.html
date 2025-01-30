@@ -10,7 +10,7 @@
     ></script>
     <link rel="stylesheet" href="./style.css" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
     </style>
   </head>
   <body>
@@ -18,22 +18,29 @@
       <header id="share-header">
         <button id="back" onclick="location.href='menu.html'">&lt;</button>
         <h2>공유 해요!</h2>
-        <figure id="share-img">
-          <img src="./pory.jpg" alt="내 이미지" />
-          <img src="./pory2.jpg" alt="내 이미지" />
-        </figure>
+        <span class="left">&lt;</span>
+        <span class="right">&gt;</span>
+        <div id="slider-wrap">
+          <div id="slider-items">
+            <img src="./pory.jpg" alt="내 이미지" class="slide" />
+            <img src="./pory2.jpg" alt="내 이미지" class="slide" />
+            <img src="./pory.jpg" alt="내 이미지" class="slide" />
+            <img src="./pory2.jpg" alt="내 이미지" class="slide" />
+          </div>
+        </div>
+        
       </header>
       <main id="share-main">
         <section>
-            <p>이름 : 김포리</p>
-            <p>성격 : zl랄맞음..</p>
-            <p>취미 : 밤마다 짖기</p>
-            <p>자신있는 것 : 목청이 너무 크다.</p>
-            <p>앞으로의 계획 : 앞으로도 밤마다 짖기..</p>
+          <p>이름 : 김포리</p>
+          <p>성격 : zl랄맞음..</p>
+          <p>취미 : 밤마다 짖기</p>
+          <p>자신있는 것 : 목청이 너무 크다.</p>
+          <p>앞으로의 계획 : 앞으로도 밤마다 짖기..</p>
         </section>
       </main>
     </div>
     <img src="./cursor4.png" id="customCursor" class="custom-cursor" />
-  <script src="./index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
