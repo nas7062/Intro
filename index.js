@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("click", (event) => {
     if (event.target.classList.contains("modal_btn")) {
       const targetModal = event.target.dataset.modal;
-      console.dir(targetModal);
+      modalPopups.forEach((popup) => {
+        popup.style.display = "none";
+      });
+
       modal.style.display = "block";
       document.querySelector(`.modal_popup.${targetModal}`).style.display =
         "block";
